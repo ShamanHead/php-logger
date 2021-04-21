@@ -1,5 +1,5 @@
 {
-    "name": "ShamanHead/php-logger",
+    "name": "shamanhead/php-logger",
     "type": "library",
     "description": "Log your work!",
     "keywords": ["php","log","logs","library","package"],
