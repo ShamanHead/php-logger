@@ -1,14 +1,14 @@
-"name": "ShamanHead/php-logger",
-"type": "library",
-"description": "Log your work!",
-"keywords": ["php","log","logs","library","package"],
-"homepage": "https://github.com/ShamanHead/php-logger",
-"license": "GNU",
-"minimum-stability": "stable",
- "require": {
-    "php": ">=7.2.*"
-},
 {
+    "name": "ShamanHead/php-logger",
+    "type": "library",
+    "description": "Log your work!",
+    "keywords": ["php","log","logs","library","package"],
+    "homepage": "https://github.com/ShamanHead/php-logger",
+    "license": "GNU",
+    "minimum-stability": "stable",
+     "require": {
+        "php": ">=7.2"
+    },
     "autoload": {
         "classmap": ["app/"]
     }
