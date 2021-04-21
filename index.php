@@ -3,9 +3,8 @@ require_once("vendor/autoload.php");
 
 use ShamanHead\PhpLogger\LoggerFactory as LoggerFactory;
 use ShamanHead\PhpLogger\ArrayLogger as ArrayLogger;
+use ShamanHead\PhpLogger\FileLogger as FileLogger;
 
-$logger = new ArrayLogger(["info" => "[INFO]"]);
+$logger = new FileLogger(["info" => "[INFO]"], "w+", "test.log");
 
 $logger->send('info', 'start listening');
-$logs = $logger->get();
-print_r($logs->toString());

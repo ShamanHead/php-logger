@@ -9,6 +9,7 @@ class ComposerStaticInit95512ae0eea7660d0d4fc884c4553d3a
     public static $classMap = array (
         'ShamanHead\\PhpLogger\\ArrayLogger' => __DIR__ . '/../..' . '/app/Entity/ArrayLogger.php',
         'ShamanHead\\PhpLogger\\Config' => __DIR__ . '/../..' . '/app/Entity/Config.php',
+        'ShamanHead\\PhpLogger\\FileLogger' => __DIR__ . '/../..' . '/app/Entity/FileLogger.php',
         'ShamanHead\\PhpLogger\\Log' => __DIR__ . '/../..' . '/app/Entity/Log.php',
         'ShamanHead\\PhpLogger\\Logger' => __DIR__ . '/../..' . '/app/Entity/Logger.php',
         'ShamanHead\\PhpLogger\\LoggerFactory' => __DIR__ . '/../..' . '/app/Factory/LoggerFactory.php',

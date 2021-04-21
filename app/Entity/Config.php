@@ -3,7 +3,7 @@
 namespace ShamanHead\PhpLogger;
 
 class Config{
-  private static $defaultLogPath = "Log/";
+  private static $defaultLogPath = "Logs/";
   private static $defaultDateConvert = "H:m:s";
 
   public static function setDefaultLogPath($path) : bool{
