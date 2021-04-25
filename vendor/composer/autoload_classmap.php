@@ -12,4 +12,5 @@ return array(
     'ShamanHead\\PhpLogger\\Log' => $baseDir . '/app/Entity/Log.php',
     'ShamanHead\\PhpLogger\\Logger' => $baseDir . '/app/Entity/Logger/Logger.php',
     'ShamanHead\\PhpLogger\\LoggerFactory' => $baseDir . '/app/Factory/LoggerFactory.php',
+    'ShamanHead\\PhpLogger\\PrefixTable' => $baseDir . '/app/Entity/PrefixTable.php',
 );

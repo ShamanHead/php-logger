@@ -8,16 +8,17 @@ use ShamanHead\PhpLogger\Config as Config;
 class Logger{
   protected $prefixes = [];
   protected $flow;
-  protected $logs;
+  protected $log;
   protected $dateConvert = "";
+  protected $returnPrefix = true;
 
   function __construct(){
     $this->dateConvert = Config::getDefaultDateConvert();
-    $this->logs = new Log;
+    $this->log = new Log;
   }
 
-  public function get(){
-    return $this->logs;
+  public function getLog(){
+    return $this->log;
   }
 
   public function setDateConvert($convert) : bool{
@@ -26,9 +27,13 @@ class Logger{
     return true;
   }
 
+  public function getPrefixes(){
+    return $this->prefixes;
+  }
+
   public function stopListening(){
     $this->__destruct();
-    return $this->logs;
+    return $this->log;
   }
 
   function __destruct(){}

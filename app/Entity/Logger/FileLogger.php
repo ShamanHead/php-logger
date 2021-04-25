@@ -20,8 +20,12 @@ class FileLogger extends Logger{
   }
 
   public function send($prefix, $message){
-    $resultMessage = [date($this->dateConvert,time()), $this->prefixes[$prefix]." ".$message];
-    $this->logs->add($resultMessage);
+    if($this->returnPrefix == true){
+      $resultMessage = [date($this->dateConvert,time()), $this->prefixes[$prefix]." ".$message];
+    }else{
+      $resultMessage = [date($this->dateConvert,time()), $message];
+    }
+    $this->log->add($resultMessage);
     $resultMessage = $resultMessage[0].$resultMessage[1];
     fwrite($this->file, $resultMessage."\n");
   }

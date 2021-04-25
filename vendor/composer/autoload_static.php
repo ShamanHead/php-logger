@@ -13,6 +13,7 @@ class ComposerStaticInit95512ae0eea7660d0d4fc884c4553d3a
         'ShamanHead\\PhpLogger\\Log' => __DIR__ . '/../..' . '/app/Entity/Log.php',
         'ShamanHead\\PhpLogger\\Logger' => __DIR__ . '/../..' . '/app/Entity/Logger/Logger.php',
         'ShamanHead\\PhpLogger\\LoggerFactory' => __DIR__ . '/../..' . '/app/Factory/LoggerFactory.php',
+        'ShamanHead\\PhpLogger\\PrefixTable' => __DIR__ . '/../..' . '/app/Entity/PrefixTable.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
