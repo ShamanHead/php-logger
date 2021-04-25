@@ -12,7 +12,7 @@ class ArrayLogger extends Logger{
   }
 
   public function send($prefix, $message){
-    $this->logs[] = [date($this->dateConvert, time()), $this->prefixes[$prefix]." ".$message];
+    $this->logs->add([date($this->dateConvert, time()), $this->prefixes[$prefix]." ".$message]);
   }
 
 

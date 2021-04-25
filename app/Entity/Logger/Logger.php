@@ -13,10 +13,11 @@ class Logger{
 
   function __construct(){
     $this->dateConvert = Config::getDefaultDateConvert();
+    $this->logs = new Log;
   }
 
   public function get(){
-    return new Log($this->logs);
+    return $this->logs;
   }
 
   public function setDateConvert($convert) : bool{
@@ -26,9 +27,8 @@ class Logger{
   }
 
   public function stopListening(){
-    $temp = $this->logs;
     $this->__destruct();
-    return new Log($temp);
+    return $this->logs;
   }
 
   function __destruct(){}

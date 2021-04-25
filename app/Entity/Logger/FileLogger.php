@@ -7,7 +7,7 @@ use ShamanHead\PhpLogger\Config as Config;
 
 class FileLogger extends Logger{
 
-  function __construct(array $prefixes, string $mode, string $fileName = "", string $flow = ""){
+  function __construct(array $prefixes, string $mode, $fileName = "", $flow = ""){
     parent::__construct();
     if($fileName == ""){
       $fileName = rand().".log";
@@ -21,7 +21,7 @@ class FileLogger extends Logger{
 
   public function send($prefix, $message){
     $resultMessage = [date($this->dateConvert,time()), $this->prefixes[$prefix]." ".$message];
-    $this->logs[] = $resultMessage;
+    $this->logs->add($resultMessage);
     $resultMessage = $resultMessage[0].$resultMessage[1];
     fwrite($this->file, $resultMessage."\n");
   }
